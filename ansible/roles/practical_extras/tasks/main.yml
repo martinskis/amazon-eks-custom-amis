@@ -1,0 +1,14 @@
+---
+# tasks file for practical_extras
+
+- name: be sure we have the awscli dependencies installed
+  yum:
+    state: latest
+    name:
+      - ntp
+
+- name: Ensure NTP is running and enabled as configured.
+  service:
+    name: ntpd
+    state: started
+    enabled: true
