@@ -137,7 +137,7 @@
         "--become-method=sudo",
         "--become-user=root",
         "--extra-vars",
-        "ansible_python_interpreter=/usr/bin/python aws_region={{user `aws_region`}} k8s_version={{user `k8s_version`}} k8s_build_date={{user `k8s_build_date`}} cni_version={{user `cni_version`}} cni_plugin_version={{user `cni_plugin_version`}} hardening={{user `hardening`}} http_proxy={{user `http_proxy` }} https_proxy={{user `https_proxy` }} no_proxy={{user `no_proxy` }}"
+        "ansible_python_interpreter=/usr/bin/python aws_region={{user `aws_region`}} k8s_version={{user `k8s_version`}} k8s_build_date={{user `k8s_build_date`}} cni_version={{user `cni_version`}} cni_plugin_version={{user `cni_plugin_version`}} hardening={{user `hardening`}} http_proxy={{user `http_proxy` }} https_proxy={{user `https_proxy` }} no_proxy={{user `no_proxy` }} docker_selinux_enabled={{user `docker_selinux_enabled`}}"
       ]
     }
   ]
