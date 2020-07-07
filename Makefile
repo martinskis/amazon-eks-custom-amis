@@ -10,7 +10,6 @@ HTTPS_PROXY := ""
 NO_PROXY := ""
 HARDENING := none
 KMS_KEY_ID := ""
-DOCKER_SELINUX_ENABLED := "true"
 CIS_BENCHMARK := "false"
 
 define packer_build
