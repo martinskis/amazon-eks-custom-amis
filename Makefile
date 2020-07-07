@@ -11,6 +11,7 @@ NO_PROXY := ""
 HARDENING := none
 KMS_KEY_ID := ""
 DOCKER_SELINUX_ENABLED := "true"
+CIS_BENCHMARK := "false"
 
 define packer_build
 	@echo "Starting Packer Build"
@@ -38,7 +39,7 @@ define packer_build
 		-var "no_proxy=$(NO_PROXY)" \
 		-var "hardening=$(HARDENING)" \
 		-var "kms_key_id=$(KMS_KEY_ID)" \
-		-var "docker_selinux_enabled=${DOCKER_SELINUX_ENABLED}" \
+		-var "cis_benchmark=${CIS_BENCHMARK}" \
 		$1
 endef
 

@@ -37,3 +37,4 @@
 
 - name: run the docker cis benchmark
   include: cis-benchmark.yml
+  when: cis_benchmark

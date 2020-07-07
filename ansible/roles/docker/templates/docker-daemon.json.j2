@@ -22,7 +22,7 @@
         }
     },
 {% if 'enabled' in sestatus.stdout %}
-    "selinux-enabled": {{ docker_selinux_enabled }},
+    "selinux-enabled": true,
 {% endif %}
     "live-restore": true,
     "userland-proxy": false,
